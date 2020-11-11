@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import AddPost from './screens/AddPost';
-import Carosel from './screens/Carosel';
-import Posts from './screens/Posts';
 import {  Route, Switch } from 'react-router-dom';
-import MorePage from './screens/MorePage';
-import Menu from './screens/Menu';
-import Api from './screens/Api';
+
 
 class App extends  Component {
 
@@ -17,15 +12,15 @@ class App extends  Component {
       <Switch>
       <Route exact path="/">
       <React.Fragment>
-          <Carosel/>
-          <Posts/>
-          <AddPost/>
-          <Menu/>
+       <p>Header</p>
       </React.Fragment>
      </Route>
 
-      <Route path="/more" component={MorePage} />
-      <Route path="/api-posts" component={ Api } />
+ <h1>Other routes</h1>
+
+      <React.Fragment>
+        <p>Footer</p>
+      </React.Fragment>
       </Switch>
       </>
       // </Router>
